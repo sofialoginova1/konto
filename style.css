@@ -8,7 +8,7 @@ font-size: 30px;
 color: black;
 }
 a{
-    font-size: 20px;
+    font-size: 40px;
     color: black;
     padding: 70px;
     text-decoration: none;
@@ -25,7 +25,6 @@ a{
 a:hover{
     color: lavender;
     text-decoration: none;
-    cursor: pointer;
 }
 li{
     a: center;
@@ -36,10 +35,11 @@ li{
     background-color:#BD52E3;
     padding: 0px;
     width: 0px;
+    position: static;
 }
-.navbar-collapse {
-    max-width: 1000vw; /* Максимальная ширина выпадающего меню */
-}
+         .navbar-collapse {
+        max-width: 1000vw; /* Максимальная ширина выпадающего меню */
+        }
 
    .dropdown {
     position: static;
@@ -54,20 +54,12 @@ li{
     width: auto;
     min-width: 400px;
 }
-
-#menuContent {
-    position: static;
-}
-#menuContent{
-    background-color:#BD52E3;
-    padding: 0px;
-    width: 0px;
-}
 .knopka:hover {
     background-color: #cb99dd !important;
     border-color: #FFFFFF !important;
     color: #FFFFFF !important;
 }
+
  body{
     background: -webkit-linear-gradient(left, #F2DDF9, #FBEFFF);
 }
