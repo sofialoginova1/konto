@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg cvet1">
+    <div class="container-fluid">
+        <img class="navbar-brand mx-auto" src="https://sun9-64.userapi.com/impg/f1rDv_9zQRyXSHuAmyAzexGZk0pOe8bJHlWRcQ/ouWhPUy6dQ0.jpg?size=716x126&quality=96&sign=f950c8824b2d88b8584d9ccca1cf9b47&type=album" height="70px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item nav-tekst">
+                    <a class="nav-link" aria-current="page" href="#">Kassi kostüümid</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+        <a href="https://prikoljuha.github.io/ITI0105-2023-avaleht/" class="btn knopka" style="background-color: #BD52E3">
+        <i class="bi bi-house"></i>
+        </a>
+        <a href="link_to_profile" class="btn knopka" style="background-color: #BD52E3">
+        <i class="bi bi-person"></i>
+        </a>
+        <a href="link_to_handbag" class="btn knopka" style="background-color: #BD52E3">
+        <i class="bi bi-handbag"></i>
+        </a>
+        <a href="link_to_search" class="btn knopka" id="searchButton" style="background-color: #BD52E3">
+        <i class="bi bi-search"></i>
+        </a>
+</div>
+            <div class="dropdown-menu dropdown-menu-end" id="menuContent" aria-labelledby="searchButton">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Leia sobiv toode" aria-label="Search">
+                    <button class="btn knopka" type="submit" style="background-color: #E6BBF6">
+                        Otsi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    const searchButton = document.getElementById("searchButton");
+const menuContent = document.getElementById("menuContent");
+const searchInput = document.querySelector('form[role="search"] input');
+const searchButtonInMenu = document.querySelector('form[role="search"] button');
+
+searchButton.addEventListener("click", function (e) {
+    e.stopPropagation();
+    menuContent.style.display = menuContent.style.display === "none" ? "block" : "none";
+});
+
+searchInput.addEventListener("click", function (e) {
+    e.stopPropagation();
+});
+
+searchButtonInMenu.addEventListener("click", function (e) {
+    e.stopPropagation();
+});
+
+document.addEventListener("click", function () {
+    menuContent.style.display = "none";
+});
+</script>
+</body>
+<body>
+<div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="https://media.istockphoto.com/id/1350689440/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D1%8B-%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%89%D0%B5%D0%B3%D0%BE-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%83%D1%8E-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D1%83.jpg?b=1&s=612x612&w=0&k=20&c=-kezo8CLUBAAsWAPd9e88vTLB8N_HUVwY54rwVj6rVY=" alt=""/>
+                            <div class="file btn btn-lg btn-primary">
+                                Change Photo
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                    <h5>
+                                        Vasja Pupkin
+                                    </h5>
+                            <p class="text1"> Isiklikud andmed </p>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-work">
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>User Id</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Vasili345</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Vasja Pupkin</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>vasjapupkinpup@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Phone</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>+372 55555555</p>
+                                            </div>
+                                        <di class="row">
+                                            <div class="col-md-6">
+                                                <label>Aadress</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Kooli tee 35-119, Tallinn, Mustamäe linnaosa, 133929</p>
+                                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+
+                            <p class="text1"> Tellimused </p>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" >
+                            <div class="tab-pane fade show active"  role="tabpanel" aria-labelledby="home-tab">
+                                <p><a class="alo" href="#">Tellimus nr-34398280</a> <i class="bi bi-arrow-right-circle"></i></p>
+                                <p><a class="alo" href="#">Tellimus nr-13293464</a> <i class="bi bi-arrow-right-circle"></i></p>
+
+                            </div>
+                        </div>
+                    </div>
+            </form>
+
+</body>
+    </html>
